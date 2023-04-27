@@ -65,6 +65,8 @@ body {
 }
 
 
+
+
 #solution-text {
     font-size: 5rem;
     font-family: 'Mark Pro', sans-serif;
@@ -84,17 +86,18 @@ body {
     }
 }
 
-.about-card-container {
+.card-container1 {
+    margin-left: 100px;
     border-radius: 2rem;
     border: 0.2rem solid #2a2b37;
     margin-top: 100px;
-    margin-left: 300px;
     font-family: 'Circular Std Book', sans-serif;
     /* font-family: 'Mark Pro', sans-serif; */
     width: 1000px;
     height: 400px;
     color: white;
 }
+
 
 .ab-card-farLeft {
     padding-left: 20px;
@@ -105,12 +108,25 @@ body {
 }
 
 
-#about-farLeft {
-    color: #6bc5f8;
+#cardTitle {
+    margin-right: 15px;
     font-family: 'Mark Pro', sans-serif;
-    /* font-family: 'Circular Std Book', sans-serif; */
+    background: linear-gradient(90deg, #e9b2e8, rgb(227, 133, 208), rgb(206, 181, 229), pink, lightpink, rgb(177, 154, 212), rgb(204, 153, 204), rgb(149, 246, 222));
+    background-size: 400%;
+    animation: animate 10s linear infinite;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
     
 }
+@keyframes animate {
+    0% {
+        background-position: 0%
+    }
+    100% {
+        background-position: 400%
+    }
+}
+
 
 
 #garyImg {
@@ -120,23 +136,39 @@ body {
     border: 0.2rem solid #2a2b37;
     height: 300px;
 }
-.about-right {
+.about-right, .edu-right {
     font-family: 'Circular Std Book', sans-serif;
     font-size: 1.3em;
-    padding-top: 5px;
     text-align: center;
     margin: 45px;
     line-height: 25px;
 }
 
-.about-left {
+.about-farRight {
+    margin-right: 30px;
+    color: #6bc5f8;
+    font-family: 'Mark Pro', sans-serif;
 }
 
-    /* font-family: 'Circular Std Book', sans-serif; */
+.card-container2 {
+    margin-left: 550px;
+    border-radius: 2rem;
+    border: 0.2rem solid #2a2b37;
+    margin-top: 100px;
+    font-family: 'Circular Std Book', sans-serif;
+    /* font-family: 'Mark Pro', sans-serif; */
+    width: 1000px;
+    height: 400px;
+    color: white;
+}
 
-/* --color-white: #fff;
-    --color-gray: #c4c4c4;
-    --color-black: #000;
-    --color-purple: #8000ff;
-    --color-light-purple: #cf59e6;
-    --color-light-blue: #6bc5f8; */
+.DojoImg {
+    height: 250px;
+    margin-left: 40px;
+    margin-top: 80px;
+    border-radius: 20%;
+}
+
+.edu-right {
+    /* padding-top: 10px; */
+}
